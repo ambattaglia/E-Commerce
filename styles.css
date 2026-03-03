@@ -157,7 +157,7 @@ HIGHLIGHTS
 
 
 #highlights:before {
-    background: url('wave.svg');
+    background: url(assets/wave.svg);
     content: "";
     position: absolute;
     width: 101vw;
@@ -167,21 +167,22 @@ HIGHLIGHTS
     z-index: 1;
     background-size: cover;
     background-repeat: no-repeat;
-    transform: translateY(-100);
+    transform: translateY(-100%);
 }
 
-#highlights:after {
-    background: url('wave.svg');
+#highlights::after {
+    background: url(assets/wave.svg);
     content: "";
     position: absolute;
-    width: 101vw;
-    height: 12vw;
     bottom: 1px;
     left: 0;
-    z-index: 1;
+    transform: translateY(100% rotate(180deg);
+    width: 101vw;
+    height: 12vw;
     background-size: cover;
     background-repeat: no-repeat;
-    transform: translateY(100);
+    z-index: 1;
+
 }
 
 .highlight__wrapper {
